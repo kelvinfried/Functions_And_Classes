@@ -4,18 +4,20 @@ const int DAMAGE_RANGE= 2;
 
 class Weapon
 {
+	private:
+		bool condition;	//If it is in good or bad condition	
+
 	public:
 		std::string name;	//Name of the weapon
 		std::string material;	//What the weapon is made of 
 		
 		/*int damage[DAMAGE_RANGE ];
-			damage[0 ]= 0;	//Min Damage value
-			damage[1 ]= 999;	//Max Damage value*/	//Causes issues has to be defined else where.
+		damage[0 ]= 0;	//Min Damage value damage[1 ]= 999;	//Max Damage value*/	//Causes issues has to be defined else where.
 		int minimum_damage;
 		int maximum_damage;
 		float range;	//Range of the weapon
 		float accuracy;	//How well it can hit
-		bool condition;	//If it is in good or bad condition
+		//bool condition;	//If it is in good or bad condition
 		
 		//Constructor set to have default values for the weapon, unusable as it is, needs to be set on startup.
 		Weapon()
@@ -28,6 +30,16 @@ class Weapon
 			range= 0.0f;
 			accuracy= 0.0f;
 			condition= false;
+		}
+		
+		bool get_condition()
+		{
+			return condition;
+		}
+		
+		void set_condition(bool new_condition )
+		{
+			condition= new_condition;
 		}
 };
 
@@ -46,7 +58,8 @@ int main()
 	std::cout<<"Damage ranges from: " <<sword.minimum_damage <<" to " <<sword.maximum_damage <<std::endl;
 	std::cout<<"Range is: " <<sword.range <<std::endl;
 	std::cout<<"Accuracy is: " <<sword.accuracy <<std::endl;
-	std::cout<<"With it's condition being " <<sword.condition <<std::endl;
+	//std::cout<<"With it's condition being " <<sword.condition <<std::endl;	//As expected raises issues.
+	std::cout<<"With it's condition being " <<sword.get_condition() <<std::endl;	//As expected raises issues.
 	
 	return 0;
 }
