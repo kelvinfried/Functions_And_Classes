@@ -23,8 +23,8 @@ class Weapon
 			name= "Default Name";
 			material= "Deafult Material";
 			
-			int minimum_damage= 0;
-			int maximum_damage= 999;
+			minimum_damage= 0;
+			maximum_damage= 999;
 			range= 0.0f;
 			accuracy= 0.0f;
 			condition= false;
@@ -34,6 +34,10 @@ class Weapon
 int main()
 {
 	Weapon sword;
+	
+	int damage[2 ]= {sword.minimum_damage, sword.maximum_damage };
+	
+	std::cout<<"Trial returns: " <<damage[0 ] <<std::endl;
 	
 	//Output section
 	std::cout<<"Welcom to the program, sword values are as listed:" <<std::endl;
