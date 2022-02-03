@@ -2,7 +2,7 @@
 
 Weapon()
 {
-	Weapon::private:
+	private:
 	//Attribute Definition
 		std::string Weapon::name;
 		std::string Weapon::material;
