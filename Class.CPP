@@ -30,7 +30,7 @@ class Weapon
 		Weapon()
 		{
 			name= "Default Name";
-			material= "Deafult Material";
+			material= "Default Material";
 			
 			minimum_damage= 0;
 			maximum_damage= 999;
