@@ -22,19 +22,20 @@ std::string Weapon::get_name()
 
 void Weapon::set_name(std::string new_name )
 {
-	if(((range> 0.0f)&& (range=< 2.0f ) )&& (new_name= "short sword" ) )
+	//If the range of the weapon is within 0-2 then it can only be called a short sword so this will need to be passed into the fucntion
+	if(((range> 0.0f)&& (range<= 2.0f ) )&& (new_name= "short sword" ) )
 	{
 		name= new_name;
 	}
-	
-	else if(((range> 2.0f)&& (range=< 5.0f ) )&& (new_name= "sword") )
+	//If it is larger than 2 but less than 5, it can be a sword.
+	else if(((range> 2.0f)&& (range<= 5.0f ) )&& (new_name= "sword") )
 	{
 		name= new_name;
 	}
-	
+	//Other wise it will not work
 	else
 	{
-			std::cout<<
+		std::cout<<"No changes occured to the name" <<std::endl;
 	}
 }
 //Material:
@@ -81,7 +82,7 @@ void Weapon::set_range(float new_range )
 void Weapon::set_accuracy(float new_accuracy )
 {
 	//If the accuracy is within 0 to 100; It will allow the new value to be passed in
-	if((new_accuracy=< 100 )&& (new_accuracy>= 0 ) )
+	if((new_accuracy<= 100 )&& (new_accuracy>= 0 ) )
 	{
 		accuracy= new_accuracy;
 	}
