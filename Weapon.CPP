@@ -58,19 +58,19 @@
 			return range;
 		}
 		
-		voidWeapon:: set_range(float new_range )
+		void Weapon:: set_range(float new_range )
 		{
 			range= new_range;
 		}
 		//accuracy
-		void Weapon::set_accuracy(float new_accuracy )
-		{
-			accuracy= new_accuracy;
-		}
-		
 		float Weapon::get_accuracy()
 		{
 			return accuracy;
+		}
+		
+		void Weapon::set_accuracy(float new_accuracy )
+		{
+			accuracy= new_accuracy;
 		}
 		//Condition
 		bool Weapon::get_condition()
