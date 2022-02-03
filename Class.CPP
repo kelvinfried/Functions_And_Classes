@@ -40,7 +40,7 @@ class Weapon
 			condition= false;
 		}
 		
-		//Getters and Setters;
+		/*//Getters and Setters;
 		//Name:
 		std::string get_name()
 		{
@@ -110,7 +110,7 @@ class Weapon
 		void set_condition(bool new_condition )
 		{
 			condition= new_condition;
-		}
+		}*/
 };
 
 int main()
