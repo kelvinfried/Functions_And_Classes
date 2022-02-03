@@ -16,21 +16,9 @@ class Weapon
 		bool condition;	//If it is in good or bad condition	
 
 	public:
-		/*std::string name;	//Name of the weapon
-		std::string material;	//What the weapon is made of 
-		
-		//int damage[DAMAGE_RANGE ];
-		//damage[0 ]= 0;	//Min Damage value damage[1 ]= 999;	//Max Damage value	//Causes issues has to be defined else where.
-		int minimum_damage;
-		int maximum_damage;
-		float range;	//Range of the weapon
-		float accuracy;	//How well it can hit
-		//bool condition;	//If it is in good or bad condition*/
-		
 		//Constructor set to have default values for the weapon, unusable as it is, needs to be set on startup.
-			//Constructor Prototype Method call
+			//Constructor Prototype Meth
 		Weapon();	
-		/*Weapon()
 		{
 			name= "Default Name";
 			material= "Default Material";
@@ -40,34 +28,25 @@ class Weapon
 			range= 0.0f;
 			accuracy= 0.0f;
 			condition= false;
-		}*/
+		}
 		
 		//Getters and Setters;
 			//Adding in "function prototypes"
 		//Name
-		std::string get_name();
-		void set_name(std::string new_name );
+
 		//Material
-		std::string get_material();
-		void set_material(std::string new_material );
+
 		//Minimum Damage
-		int get_minimum_damage();
-		void set_minimum_damage(int new_minimum_damage );
+
 		//Maximum Damage
-		int get_maximum_damage();
-		void set_maximum_damage(int new_maximum_damage );
+
 		//Range
-		float get_range();
-		void set_range(float new_range );
+
 		//Accuracy
-		float get_accuracy();
-		void set_accuracy(float new_accuracy );
+
 		//Condition
-		bool get_condition();
-		void set_condition(bool new_condition );
 		
-		
-		/*
+
 		//Name:
 		std::string get_name()
 		{
@@ -137,7 +116,7 @@ class Weapon
 		void set_condition(bool new_condition )
 		{
 			condition= new_condition;
-		}*/
+		}
 };
 
 int main()
