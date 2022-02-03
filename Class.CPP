@@ -40,7 +40,32 @@ class Weapon
 			condition= false;
 		}
 		
-		/*//Getters and Setters;
+		//Getters and Setters;
+			//Adding in function prototypes
+		//Name
+		std::string get_name();
+		void set_name(std::string new_name );
+		//Material
+		std::string get_material();
+		void set_material(std::string new_material );
+		//Minimum Damage
+		int get_minimum_damage();
+		void set_minimum_damage(int new_minimum_damage );
+		//Maximum Damage
+		int get_maximum_damage();
+		void set_maximum_damage(int new_maximum_damage );
+		//Range
+		float get_range();
+		void set_range(float new_range );
+		//Accuracy
+		float get_accuracy();
+		void set_accuracy(float new_accuracy );
+		//Condition
+		bool get_condition();
+		void set_condition(bool new_condition );
+		
+		
+		/*
 		//Name:
 		std::string get_name()
 		{
