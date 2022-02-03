@@ -28,7 +28,9 @@ class Weapon
 		//bool condition;	//If it is in good or bad condition*/
 		
 		//Constructor set to have default values for the weapon, unusable as it is, needs to be set on startup.
-		Weapon()
+			//Constructor Prototype Method call
+		Weapon();	
+		/*Weapon()
 		{
 			name= "Default Name";
 			material= "Default Material";
@@ -38,10 +40,10 @@ class Weapon
 			range= 0.0f;
 			accuracy= 0.0f;
 			condition= false;
-		}
+		}*/
 		
 		//Getters and Setters;
-			//Adding in function prototypes
+			//Adding in "function prototypes"
 		//Name
 		std::string get_name();
 		void set_name(std::string new_name );

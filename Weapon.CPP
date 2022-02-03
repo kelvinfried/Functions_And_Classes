@@ -1,5 +1,16 @@
 #include "Weapon.h"
-
+//Constructor
+	Weapon()
+		{
+			name= "Default Name";
+			material= "Default Material";
+			
+			minimum_damage= 0;
+			maximum_damage= 999;
+			range= 0.0f;
+			accuracy= 0.0f;
+			condition= false;
+		}
 //Getters and Setters;
 		//Name:
 		std::string Weapon::get_name()
