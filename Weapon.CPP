@@ -1,6 +1,6 @@
 #include "Weapon.h"
 //Constructor
-	Weapon()
+	Weapon::Weapon()
 		{
 			name= "Default Name";
 			material= "Default Material";
