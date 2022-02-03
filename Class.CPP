@@ -50,6 +50,6 @@ int main()
 	std::cout<<"Name is: " <<sword.get_name() <<std::endl;
 	sword.set_name("sword" );
 	std::cout<<"Name is: " <<sword.get_name() <<std::endl;	//Here this works as it is within a valid range
-	
+	 
 	return 0;
 }
