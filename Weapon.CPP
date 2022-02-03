@@ -1,6 +1,20 @@
 #include "Weapon.h"
-//Constructor
-	Weapon::Weapon()
+class Weapon
+{
+	private:
+		std::string name;
+		std::string material;
+		
+		int minimum_damage;
+		int maximum_damage;
+		float range;
+		float accuracy;
+		bool condition;	//If it is in good or bad condition	
+
+	public:
+		//Constructor set to have default values for the weapon, unusable as it is, needs to be set on startup.
+			//Constructor Prototype Meth
+		Weapon();	
 		{
 			name= "Default Name";
 			material= "Default Material";
@@ -11,34 +25,34 @@
 			accuracy= 0.0f;
 			condition= false;
 		}
-//Getters and Setters;
+		
 		//Name:
-		std::string Weapon::get_name()
+		std::string get_name()
 		{
 			return name;
 		}
 		
-		void Weapon::set_name(std::string new_name )
+		void set_name(std::string new_name )
 		{
 			name= new_name;
 		}
 		//Material:
-		std::string Weapon::get_material()
+		std::string get_material()
 		{
 			return material;
 		}
 
-		void Weapon::set_material(std::string new_materials )
+		void set_material(std::string new_materials )
 		{
 			material= new_materials;
 		}
 		//Minimum Damage
-		int Weapon::get_minimum_damage()
+		int get_minimum_damage()
 		{
 			return minimum_damage;
 		}
 		
-		void Weapon::set_minimum_damage(int new_minimum_damage )
+		void set_minimum_damage(int new_minimum_damage )
 		{
 			minimum_damage= new_minimum_damage;
 		}
@@ -48,37 +62,38 @@
 			return maximum_damage;
 		}
 		
-		void Weapon::set_maximum_damage(int new_maximum_damage )
+		void set_maximum_damage(int new_maximum_damage )
 		{
 			maximum_damage= new_maximum_damage;
 		}
 		//range
-		float Weapon::get_range()
+		float get_range()
 		{
 			return range;
 		}
 		
-		void Weapon:: set_range(float new_range )
+		void set_range(float new_range )
 		{
 			range= new_range;
 		}
 		//accuracy
-		float Weapon::get_accuracy()
-		{
-			return accuracy;
-		}
-		
-		void Weapon::set_accuracy(float new_accuracy )
+		void set_accuracy(float new_accuracy )
 		{
 			accuracy= new_accuracy;
 		}
+		
+		float get_accuracy()
+		{
+			return accuracy;
+		}
 		//Condition
-		bool Weapon::get_condition()
+		bool get_condition()
 		{
 			return condition;
 		}
 		
-		void Weapon::set_condition(bool new_condition )
+		void set_condition(bool new_condition )
 		{
 			condition= new_condition;
 		}
+};
