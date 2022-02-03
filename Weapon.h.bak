@@ -1,40 +1,47 @@
-#include <string>
-
-Weapon()
+#include <iostream>
+#include "Weapon.CPP"
+class Weapon
 {
 	private:
-	//Attribute Definition
-		std::string Weapon::name;
-		std::string Weapon::material;
+		std::string name;
+		std::string material;
 		
-		int Weapon::minimum_damage;
-		int Weapon::maximum_damage;
-		float Weapon::range;
-		float Weapon::accuracy;
-		bool Weapon::condition;	//If it is in good or bad condition	
-		
+		int minimum_damage;
+		int maximum_damage;
+		float range;
+		float accuracy;
+		bool condition;	//If it is in good or bad condition	
+
 	public:
-	//Constructor 
-		Weapon::Weapon();
-		//Name
-		std::string Weapon::get_name();
-		void Weapon::set_name(std::string new_name );
-		//Mateiral
-		std::string Weapon::get_material();
-		void Weapon::set_material(std::string new_materials );
-		//Min Damage
-		int Weapon::get_minimum_damage();
-		void Weapon::set_minimum_damage(int new_minimum_damage );
-		//Max Damage
+		//Constructor set to have default values for the weapon, unusable as it is, needs to be set on startup.
+		Weapon();	
+	
+		//Getter and Setter block
+		//Name:
+		std::string get_name();
+		void set_name(std::string new_name );
+		
+		//Material:
+		std::string get_material();
+		void set_material(std::string new_materials );
+		
+		//Minimum Damage
+		int get_minimum_damage();
+		void set_minimum_damage(int new_minimum_damage );
+		
+		//Maximum Damage
 		int get_maximum_damage();
-		void Weapon::set_maximum_damage(int new_maximum_damage );
-		//Range
-		float Weapon::get_range();
-		void Weapon:: set_range(float new_range );
-		//Accuracy
-		float Weapon::get_accuracy();
-		void Weapon::set_accuracy(float new_accuracy );
-		//Conditon
-		bool Weapon::get_condition();
-		void Weapon::set_condition(bool new_condition );
+		void set_maximum_damage(int new_maximum_damage );
+		
+		//range
+		float get_range();
+		void set_range(float new_range );
+		
+		//accuracy
+		void set_accuracy(float new_accuracy );
+		float get_accuracy();
+		
+		//Condition
+		bool get_condition();
+		void set_condition(bool new_condition );
 };

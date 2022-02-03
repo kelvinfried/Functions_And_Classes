@@ -1,7 +1,5 @@
-#include "Weapon.h"
 #include <iostream>
-
-const int DAMAGE_RANGE= 2;
+#include "Weapon.CPP"
 
 int main()
 {
