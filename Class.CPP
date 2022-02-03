@@ -152,5 +152,6 @@ int main()
 	sword.set_condition(true );
 	std::cout<<"With it's condition being " <<sword.get_condition() <<std::endl;	//As expected raises issues.
 	
+	//Task 5 working with external files;
 	return 0;
 }
