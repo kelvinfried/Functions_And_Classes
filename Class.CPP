@@ -5,19 +5,26 @@ const int DAMAGE_RANGE= 2;
 class Weapon
 {
 	private:
+		std::string name;
+		std::string material;
+		
+		int minimum_damage;
+		int maximum_damage;
+		float range;
+		float accuracy;
 		bool condition;	//If it is in good or bad condition	
 
 	public:
-		std::string name;	//Name of the weapon
+		/*std::string name;	//Name of the weapon
 		std::string material;	//What the weapon is made of 
 		
-		/*int damage[DAMAGE_RANGE ];
-		damage[0 ]= 0;	//Min Damage value damage[1 ]= 999;	//Max Damage value*/	//Causes issues has to be defined else where.
+		//int damage[DAMAGE_RANGE ];
+		//damage[0 ]= 0;	//Min Damage value damage[1 ]= 999;	//Max Damage value	//Causes issues has to be defined else where.
 		int minimum_damage;
 		int maximum_damage;
 		float range;	//Range of the weapon
 		float accuracy;	//How well it can hit
-		//bool condition;	//If it is in good or bad condition
+		//bool condition;	//If it is in good or bad condition*/
 		
 		//Constructor set to have default values for the weapon, unusable as it is, needs to be set on startup.
 		Weapon()
@@ -32,6 +39,68 @@ class Weapon
 			condition= false;
 		}
 		
+		//Getters and Setters;
+		//Name:
+		std::string get_name()
+		{
+			return name;
+		}
+		
+		void set_name(std::string new_name )
+		{
+			name= new_name;
+		}
+		//Material:
+		std::string get_material()
+		{
+			return material;
+		}
+
+		void set_materials(std::string new_materials )
+		{
+			material= new_materials;
+		}
+		//Minimum Damage
+		int get_minimum_damage()
+		{
+			return minimum_damage;
+		}
+		
+		void set_minimum_damage(int new_minimum_damage )
+		{
+			minimum_damage= new_minimum_damage;
+		}
+		//Maximum Damage
+		int get_maximum_damage()
+		{
+			return maximum_damage;
+		}
+		
+		void set_maximum_damage(int new_maximum_damage )
+		{
+			maximum_damage= new_maximum_damage;
+		}
+		//range
+		float get_range()
+		{
+			return range;
+		}
+		
+		void set_range(float new_range )
+		{
+			range= new_range;
+		}
+		//accuracy
+		void set_accuracy(float new_accuracy )
+		{
+			accuracy= new_accuracy;
+		}
+		
+		float get_accuracy()
+		{
+			return accuracy;
+		}
+		//Condition
 		bool get_condition()
 		{
 			return condition;
