@@ -114,25 +114,27 @@ class Weapon
 
 int main()
 {
-	Weapon sword;
-	
-	int damage[2 ]= {sword.minimum_damage, sword.maximum_damage };
-	
-	std::cout<<"Trial returns: " <<damage[0 ] <<std::endl;
+	//Created a sword object from the weapon class; Defined with default values.
+	Weapon sword;	
 	
 	//Output section
 		//std::cout<<"Welcom to the program, sword values are as listed:" <<std::endl;
 	std::cout<<"Welcom to the program, sword values are as listed:" <<std::endl;
 		//std::cout<<"Name is: " <<sword.name <<std::endl;
-	std::cout<<"Name is: " <<sword.name <<std::endl;
+	std::cout<<"Name is: " <<sword.get_name() <<std::endl;
+	
 		//std::cout<<"Material is: " <<sword.material <<std::endl;
-	std::cout<<"Material is: " <<sword.material <<std::endl;
+	std::cout<<"Material is: " <<sword.get_material() <<std::endl;
+	
 		//std::cout<<"Damage ranges from: " <<sword.minimum_damage <<" to " <<sword.maximum_damage <<std::endl;
-	std::cout<<"Damage ranges from: " <<sword.minimum_damage <<" to " <<sword.maximum_damage <<std::endl;
+	std::cout<<"Damage ranges from: " <<sword.get_minimum_damage() <<" to " <<sword.get_maximum_damage() <<std::endl;
+	
 		//std::cout<<"Range is: " <<sword.range <<std::endl;
-	std::cout<<"Range is: " <<sword.range <<std::endl;
+	std::cout<<"Range is: " <<sword.get_range() <<std::endl;
+	
 		//std::cout<<"Accuracy is: " <<sword.accuracy <<std::endl;
-	std::cout<<"Accuracy is: " <<sword.accuracy <<std::endl;
+	std::cout<<"Accuracy is: " <<sword.get_accuracy() <<std::endl;
+	
 		//std::cout<<"With it's condition being " <<sword.condition <<std::endl;	//As expected raises issues.
 	std::cout<<"With it's condition being " <<sword.get_condition() <<std::endl;	//As expected raises issues.
 	
