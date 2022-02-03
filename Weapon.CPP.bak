@@ -23,12 +23,12 @@ std::string Weapon::get_name()
 void Weapon::set_name(std::string new_name )
 {
 	//If the range of the weapon is within 0-2 then it can only be called a short sword so this will need to be passed into the fucntion
-	if(((range> 0.0f)&& (range<= 2.0f ) )&& (new_name= "short sword" ) )
+	if(((range> 0.0f)&& (range<= 2.0f ) )&& (new_name== "short sword" ) )
 	{
 		name= new_name;
 	}
 	//If it is larger than 2 but less than 5, it can be a sword.
-	else if(((range> 2.0f)&& (range<= 5.0f ) )&& (new_name= "sword") )
+	else if(((range> 2.0f)&& (range<= 5.0f ) )&& (new_name== "sword") )
 	{
 		name= new_name;
 	}

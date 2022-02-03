@@ -17,7 +17,7 @@ Weapon::Weapon()
 //Name:
 std::string Weapon::get_name()
 {
-		return name;
+	return name;
 }
 
 void Weapon::set_name(std::string new_name )
