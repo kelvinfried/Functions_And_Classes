@@ -52,6 +52,6 @@ int main()
 	std::cout<<"Name is: " <<sword.get_name() <<std::endl;	//Here this works as it is within a valid range
 	 
 	 
-	 //Task 7	//Task 8
+	 //Task 7	//Task 8 
 	return 0;
 }
