@@ -63,8 +63,7 @@ int main()
 	std::cout<<std::endl <<std::endl <<std::endl <<std::endl;
 	Fish test_1;
 	
-	std::cout<<"The fish tells us that it's name is " <<test_1.get_name() <<std::endl;
-	
+	//std::cout<<"The fish tells us that it's name is " <<test_1.get_name() <<std::endl;
 	
 	return 0;
 }
