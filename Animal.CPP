@@ -36,51 +36,51 @@ std::string Animal::get_name()
 	return name;
 }
 
-void Animal::set_name(int new_name )
+void Animal::set_name(std::string new_name )
 {
 	name= new_name;
 }
 
 //Width
-int Animal::get_width()
+float Animal::get_width()
 {
 	return width;
 }
 
-void Animal::set_width(int new_width )
+void Animal::set_width(float new_width )
 {
 	width= new_width;
 }
 
 //Height
-int Animal::get_height()
+float Animal::get_height()
 {
 	return height;
 }
 
-void Animal::set_height(int new_height )
+void Animal::set_height(float new_height )
 {
 	height= new_height;
 }
 
 //Length
-int Animal::get_length()
+float Animal::get_length()
 {
 	return length;
 }
 
-void Animal::set_length(int new_length )
+void Animal::set_length(float new_length )
 {
 	length= new_length;
 }
 
 //Weight
-int Animal::get_weight()
+float Animal::get_weight()
 {
 	return weight;
 }
 
-void Animal::set_weight(int new_weight )
+void Animal::set_weight(float new_weight )
 {
 	weight= new_weight;
 }
@@ -93,4 +93,5 @@ bool Animal::get_gender()
 
 void Animal::set_gender(bool new_gender )
 {
-	gender= new_gender
+	gender= new_gender;
+}

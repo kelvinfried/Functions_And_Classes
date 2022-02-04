@@ -55,6 +55,6 @@ int main()
 	 //Task 7	//Task 8 
 	Animal test;
 	
-	test.output_name();
+	test.output_age();
 	return 0;
 }
