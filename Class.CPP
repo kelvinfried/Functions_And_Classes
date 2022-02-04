@@ -2,13 +2,14 @@
 #include "Weapon.CPP"
 #include "Animal.CPP"
 #include "Fish.CPP"
+#include "Bird.CPP"
 
 int main()
 {
 	//Created a sword object from the weapon class; Defined with default values.
 	Weapon sword;	
 	
-	//Output section	- Task 2
+	/*//Output section	- Task 2
 		//Task 4: Over Write the values using the setters	-Placing valid sword attributes for the object
 		//Task 6: Modifying setters to be able to use them to check my validation
 	//std::cout<<"Welcom to the program, sword values are as listed:" <<std::endl;
@@ -51,19 +52,22 @@ int main()
 	sword.set_name("short sword" );	//Should not work as the default value is less than 0
 	std::cout<<"Name is: " <<sword.get_name() <<std::endl;
 	sword.set_name("sword" );
-	std::cout<<"Name is: " <<sword.get_name() <<std::endl;	//Here this works as it is within a valid range
+	std::cout<<"Name is: " <<sword.get_name() <<std::endl;	//Here this works as it is within a valid range */
 	 
 	 //Task 7	//Task 8 
 	//Line break
-	std::cout<<std::endl <<std::endl <<std::endl <<std::endl;
+	//std::cout<<std::endl <<std::endl <<std::endl <<std::endl;
 	Animal test;
-	
 	test.output_age();
 	
-	std::cout<<std::endl <<std::endl <<std::endl <<std::endl;
-	Fish test_1;
+	std::cout<<std::endl <<std::endl;
 	
-	//std::cout<<"The fish tells us that it's name is " <<test_1.get_name() <<std::endl;
+	Fish test_1;
+	std::cout<<"The fish tells us that it's name is " <<test_1.get_name() <<std::endl <<std::endl;
+	
+	Bird test_2;
+	test_2.output_age();
+
 	
 	return 0;
 }

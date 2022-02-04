@@ -3,6 +3,10 @@
 //Bird construcor
 Bird::Bird()
 {
+	//Parent class attributes
+	name= "Default Bird Name";
+	
+	//Class attributes
 	wing_span= 0;
 	air_time= 0;
 };
