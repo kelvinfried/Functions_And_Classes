@@ -16,7 +16,7 @@ Animal::Animal()
 //Seperate as to not cause issues with an output calling a function which has another output
 void Animal::output_age()
 {
-	std::cout<< "The current age of " <<get_name() <<" is " <<get_age() <<std::endl;
+	std::cout<< "The current age of '" <<get_name() <<"' is " <<get_age() <<std::endl;
 }
 //Getters and Setters
 	//Age:

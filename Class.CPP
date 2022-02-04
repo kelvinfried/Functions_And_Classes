@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Weapon.CPP"
 #include "Animal.CPP"
+#include "Fish.CPP"
 
 int main()
 {
@@ -53,6 +54,8 @@ int main()
 	std::cout<<"Name is: " <<sword.get_name() <<std::endl;	//Here this works as it is within a valid range
 	 
 	 //Task 7	//Task 8 
+	//Line break
+	std::cout<<std::endl <<std::endl <<std::endl <<std::endl;
 	Animal test;
 	
 	test.output_age();

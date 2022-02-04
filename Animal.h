@@ -1,8 +1,10 @@
 #include <iostream>
+#ifndef ANIMAL_H
+#define ANIMAL_H
 
 class Animal
 {
-	private:
+	protected:
 		//Attributes for all the animals
 		int age;
 		std::string name;
@@ -41,3 +43,5 @@ class Animal
 		bool get_gender();
 		void set_gender(bool new_gender );
 };
+
+#endif
