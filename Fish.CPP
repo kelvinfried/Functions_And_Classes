@@ -4,7 +4,7 @@
 //Fish constructor 
 Fish::Fish()
 {
-	//Parent class redefined attrubtes 
+	//Parent class redefined attrubtes  //Overwriting parent class function
 	name= "Default Fish Name";
 	
 	//Own class attrubutes
