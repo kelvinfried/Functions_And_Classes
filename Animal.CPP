@@ -13,6 +13,11 @@ Animal::Animal()
 	gender= false;
 };
 
+//Seperate as to not cause issues with an output calling a function which has another output
+void Animal::output_age()
+{
+	std::cout<< "The current age of " <<get_name() <<" is " <<get_age() <<std::endl;
+}
 //Getters and Setters
 	//Age:
 int Animal::get_age()
@@ -26,7 +31,7 @@ void Animal::set_age(int new_age )
 }
 
 	//Name
-int Animal::get_name()
+std::string Animal::get_name()
 {
 	return name;
 }
@@ -81,11 +86,11 @@ void Animal::set_weight(int new_weight )
 }
 
 //Gender
-int Animal::get_gender()
+bool Animal::get_gender()
 {
 	return gender;
 }
 
-void Animal::set_gender(int new_gender )
+void Animal::set_gender(bool new_gender )
 {
 	gender= new_gender

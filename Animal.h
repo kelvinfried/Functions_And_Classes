@@ -17,26 +17,27 @@ class Animal
 		//Constructor
 		Animal();
 		
+		void output_age();
 		//Getters and setters
 		//Age
 		int get_age();
 		void set_age(int new_age );
 		//Name
-		int get_name();
-		void set_name(int new_name );
+		std::string get_name();
+		void set_name(std::string new_name );
 		//Width
-		int get_width();
-		void set_width(int new_width );
+		float get_width();
+		void set_width(float new_width );
 		//Height
-		int get_height();
-		void set_height(int new_height );
+		float get_height();
+		void set_height(float new_height );
 		//Length
-		int get_length();
-		void set_length(int new_length );
+		float get_length();
+		void set_length(float new_length );
 		//Weight
-		int get_weight();
-		void set_weight(int new_weight );
+		float get_weight();
+		void set_weight(float new_weight );
 		//Gender
-		int get_gender();
-		void set_gender(int new_gender );
-}
+		bool get_gender();
+		void set_gender(bool new_gender );
+};

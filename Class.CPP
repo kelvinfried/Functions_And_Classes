@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Weapon.CPP"
+#include "Animal.CPP"
 
 int main()
 {
@@ -51,7 +52,9 @@ int main()
 	sword.set_name("sword" );
 	std::cout<<"Name is: " <<sword.get_name() <<std::endl;	//Here this works as it is within a valid range
 	 
-	 
 	 //Task 7	//Task 8 
+	Animal test;
+	
+	test.output_name();
 	return 0;
 }
