@@ -11,6 +11,11 @@ Bird::Bird()
 	air_time= 0;
 };
 
+void Bird::output_age()
+{
+	std::cout<<"The wingspan of the bird is " <<wing_span <<". It's age is " <<age <<std::endl;
+}
+
 //Getters and setters
 //Wing_span
 int Bird::get_wing_span()

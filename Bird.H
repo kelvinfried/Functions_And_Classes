@@ -10,6 +10,7 @@ class Bird: public Animal
 		//Constructor
 		Bird();
 		
+		void output_age();
 		//Getters and setters
 		//Wing span
 		int get_wing_span();

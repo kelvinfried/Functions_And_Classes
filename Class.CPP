@@ -7,7 +7,7 @@
 int main()
 {
 	//Created a sword object from the weapon class; Defined with default values.
-	Weapon sword;	
+	//Weapon sword;	
 	
 	/*//Output section	- Task 2
 		//Task 4: Over Write the values using the setters	-Placing valid sword attributes for the object
@@ -58,16 +58,25 @@ int main()
 	//Line break
 	//std::cout<<std::endl <<std::endl <<std::endl <<std::endl;
 	Animal test;
+	
+	std::cout<<std::endl;
 	test.output_age();
 	
-	std::cout<<std::endl <<std::endl;
+	Fish salmon;
+	//std::cout<<"The fish tells us that it's name is " <<test_1.get_name() <<std::endl <<std::endl;
+	salmon.output_age();
 	
-	Fish test_1;
-	std::cout<<"The fish tells us that it's name is " <<test_1.get_name() <<std::endl <<std::endl;
-	
-	Bird test_2;
-	test_2.output_age();
+	Bird seagull;
+	seagull.output_age();
 
+
+	//Attempting to call the parent class version of output age
+	//seagull.Animal::output_age();
+	//std::cout<< seagull.Animal::get_age() <<std::endl;
+	//salmon.Animal::output_age();
+	seagull.output_age();
+	seagull.Animal::output_age();
+	
 	
 	return 0;
 }
